@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اسس الجنوب</title>
+  <link rel="shortcut icon" href="icons/loogo_ic.png" type="image/x-icon">
+  <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+  rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
+<script src="https://cdn.tailwindcss.com/3.3.0"></script>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+        body: ["Roboto", "sans-serif"],
+        mono: ["ui-monospace", "monospace"],
+      },
+    },
+    corePlugins: {
+      preflight: false,
+    },
+  };
+</script>
+<style>
+  body {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
+</head>
+<body class="scroll-smooth bg-gradient-to-t from-gray-400 to-gray-900">
+    <nav class="w-full fixed z-50 top-0 left-0 right-0 backdrop-blur-lg shadow-sm px-6 py-4" dir="rtl">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex flex-row justify-end items-center relative text-xl font-bold text-white">
+        <img class="w-7 h-7 ml-3" src="icons/loogo_ic.png" alt="Logo">
+        أسس الجنوب
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6 rtl:space-x-reverse text-gray-700 font-medium">
+        <li class="text-yellow-500 font-bold">الرئيسية</li>
+        <li class="text-gray-300"><a class="no-underline" href="#aubout">من نحن</a></li>
+        <li class="text-gray-300"><a href="#services">خدماتنا</a></li>
+        <li class="text-gray-300">المشاريع</li>
+        <li class="text-gray-300"><a href="#contact">تواصل معنا</a></li>
+      </ul>
+
+      <!-- Language Switch -->
+      <div class="hidden md:flex space-x-1 rtl:space-x-reverse bg-white rounded-full p-1">
+        <button class="px-5 py-1 text-white bg-yellow-500 rounded-full">ع</button>
+        <button class="px-3 py-1 text-black rounded-full"><a href="index.html">EN</a></button>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="md:hidden">
+        <button id="menuBtn" class="text-gray-800 focus:outline-none text-2xl">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden mt-4 md:hidden space-y-3" dir="rtl">
+      <ul class="flex flex-col space-y-2 text-gray-700 font-medium">
+        <li class="text-yellow-500 font-bold">الرئيسية</li>
+        <li class="text-gray-300"><a class="no-underline" href="#aubout">من نحن</a></li>
+        <li class="text-gray-300"><a href="#services">خدماتنا</a></li>
+        <li class="text-gray-300">المشاريع</li>
+        <li class="text-gray-300"><a href="#contact">تواصل معنا</a></li>
+      </ul>
+      <div class="flex space-x-1 rtl:space-x-reverse bg-white rounded-full w-fit p-1">
+        <button class="px-3 py-1 text-black bg-yellow-500 rounded-full">ع</button>
+        <button class="px-3 py-1 text-black rounded-full"><a href="index.html">EN</a></button>
+      </div>
+    </div>
+</nav>
+
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+<section class="w-full py-16 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-10" dir="rtl">
+  <!-- Text Section -->
+  <div class="max-w-xl text-right">
+    <h1 class="text-4xl md:text-5xl font-bold text-yellow-500 leading-tight">
+      أسس راسخة<br />
+      لهندسة <br />
+      المستقبل
+    </h1>
+    <p class="text-gray-600 mt-4 text-lg text-clifford">
+      أسس الجنوب هي شركة هندسية متخصصة مقرها البصرة، العراق،
+      تقدم خدمات متكاملة في التصميم، الإنشاء، والإشراف على المشاريع.
+    </p>
+    <div class="mt-6 flex gap-4 justify-start">
+      <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded">
+        <a class="no-underline" href="#services">استكشف خدماتنا</a>
+      </button>
+      <button class="border border-yellow-500 text-yellow-500 font-semibold py-2 px-4 rounded hover:bg-yellow-50">
+        <a class="no-underline" href="#contact">تواصل معنا</a>
+      </button>
+    </div>
+  </div>
+
+  <div class="relative rounded-xl p-4">
+    <img
+      src="https://i.pinimg.com/originals/51/4c/4f/514c4f3a891ffc51439d20dc145f7563.gif"
+      alt="image"
+      class="rounded-lg max-w-xs md:max-w-md"
+    />
+
+  </div>
+</section>
+
+
+<!-- About Us Section (Translated) -->
+<section id="aubout" class="py-16" dir="rtl">
+  <div class="max-w-4xl mx-auto text-center px-4">
+    <h2 class="text-4xl font-bold text-white mb-4">من نحن</h2>
+    <p class="text-lg text-gray-200 mb-12">
+      أسس الجنوب هي شركة هندسية متخصصة في المقاولات والاستمثار والتطوير العقاري. نقدم خدمات متكاملة في التصميم، الإنشاء، والإشراف على المشاريع.
+    </p>
+    <div class="flex flex-col md:flex-row gap-8 mb-16">
+      <div class="bg-white rounded-2xl shadow-lg flex-1 p-8 flex flex-col items-start text-right">
+        <div class="flex items-center gap-4 mb-2 justify-end">
+          <div class="bg-gray-500 rounded-xl p-3 flex items-center justify-center">
+            <!-- Eye icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5c-7 0-9 7-9 7s2 7 9 7 9-7 9-7-2-7-9-7zm0 10a3 3 0 100-6 3 3 0 000 6z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900">الرؤية</h3>
+        </div>
+        <p class="text-gray-700 text-base leading-relaxed mt-2">
+          أن نكون رواد الحلول الهندسية الذكية والمستدامة في العراق والمنطقة من خلال الابتكار والجودة والموثوقية.
+        </p>
+      </div>
+      <!-- Mission Card -->
+      <div class="bg-white rounded-2xl shadow-lg flex-1 p-8 flex flex-col items-start text-right">
+        <div class="flex items-center gap-4 mb-2 justify-end">
+          <div class="bg-gray-500 rounded-xl p-3 flex items-center justify-center">
+            <!-- Target icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/>
+              <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" fill="none"/>
+              <circle cx="12" cy="12" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900">الرسالة</h3>
+        </div>
+        <p class="text-gray-700 text-base leading-relaxed mt-2">
+          تقديم حلول هندسية شاملة وعالية الجودة في التصميم، التنفيذ، والإشراف، بما يتماشى مع المعايير العالمية لضمان رضا العملاء والمساهمة في مستقبل عمراني حديث.
+        </p>
+      </div>
+    </div>
+    <h3 class="text-3xl font-bold text-white mb-8">قيمنا الجوهرية</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <!-- Quality -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+        <div class="bg-gray-500 rounded-xl p-3 mb-4 flex items-center justify-center">
+          <!-- Badge Check icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l2.09 6.26L21 9.27l-5 3.73L17.18 21 12 17.77 6.82 21 8 13l-5-3.73 6.91-1.01z" />
+          </svg>
+        </div>
+        <h4 class="text-xl font-bold text-gray-900 mb-2">الجودة</h4>
+        <p class="text-gray-700 text-sm text-center">الالتزام بأعلى المعايير</p>
+      </div>
+      <!-- Commitment -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+        <div class="bg-gray-500 rounded-xl p-3 mb-4 flex items-center justify-center">
+          <!-- Handshake icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </div>
+        <h4 class="text-xl font-bold text-gray-900 mb-2">الالتزام</h4>
+        <p class="text-gray-700 text-sm text-center">الوفاء بالوعود والمواعيد النهائية</p>
+      </div>
+      <!-- Innovation -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+        <div class="bg-gray-500 rounded-xl p-3 mb-4 flex items-center justify-center">
+          <!-- Light Bulb icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3a6 6 0 016 6c0 3-2 5-3 7H9c-1-2-3-4-3-7a6 6 0 016-6z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17h6m-3 0v2m0 0h.01" />
+          </svg>
+        </div>
+        <h4 class="text-xl font-bold text-gray-900 mb-2">الابتكار</h4>
+        <p class="text-gray-700 text-sm text-center">البحث عن حلول إبداعية</p>
+      </div>
+      <!-- Integrity -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+        <div class="bg-gray-500 rounded-xl p-3 mb-4 flex items-center justify-center">
+          <!-- Shield icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l7 4v5c0 5.25-3.43 10.74-7 12-3.57-1.26-7-6.75-7-12V7l7-4z" />
+          </svg>
+        </div>
+        <h4 class="text-xl font-bold text-gray-900 mb-2">النزاهة</h4>
+        <p class="text-gray-700 text-sm text-center">الشفافية والصدق في العمل</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="w-full  py-16" dir="rtl">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-5xl font-bold text-white text-center mb-4">خدماتنا</h2>
+    <p class="text-xl text-gray-200 text-center mb-12">
+      نقدم مجموعة شاملة من الخدمات الهندسية المتخصصة
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Engineering Design -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+        <div class="bg-yellow-100 rounded-full p-4 mb-4 flex items-center justify-center">
+          <!-- Building Icon -->
+          <svg class="h-8 w-8 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect x="7" y="3" width="10" height="18" rx="2" />
+            <path d="M9 9h1M14 9h1M9 13h1M14 13h1M12 17v1" stroke="currentColor" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-900 mb-2">التصميم الهندسي</h3>
+        <p class="text-gray-500 text-base">
+          المعماري، الإنشائي، الكهروميكانيكي، الواجهات ثلاثية الأبعاد، ونمذجة معلومات البناء (BIM)
+        </p>
+      </div>
+      <!-- Project Execution -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+        <div class="bg-yellow-100 rounded-full p-4 mb-4 flex items-center justify-center">
+          <!-- Hammer Icon -->
+          <svg class="h-8 w-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path d="M17 17l4-4m-7-7l-4 4m1 5l7 7m-1.5-4.5L6.5 6.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-900 mb-2">تنفيذ المشاريع</h3>
+        <p class="text-gray-500 text-base">
+          المشاريع السكنية، التجارية، والصناعية مع إدارة شاملة لدورة حياة المشروع
+        </p>
+      </div>
+      <!-- Engineering Supervision & Consulting -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+        <div class="bg-yellow-100 rounded-full p-4 mb-4 flex items-center justify-center">
+          <svg class="h-8 w-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <rect x="9" y="2" width="6" height="4" rx="1" />
+            <rect x="4" y="6" width="16" height="16" rx="2"/>
+            <path d="M9 14l2 2l4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-900 mb-2">الإشراف الهندسي والاستشارات</h3>
+        <p class="text-gray-500 text-base">
+          ضمان الجودة، إعداد التقارير، وتقديم الحلول الفنية المتخصصة
+        </p>
+      </div>
+      <!-- Surveying Works -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+        <div class="bg-yellow-100 rounded-full p-4 mb-4 flex items-center justify-center">
+          <!-- Map Pin Icon -->
+          <svg class="h-8 w-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path d="M12 21c-4.97-4.97-8-8.03-8-11A8 8 0 0112 3a8 8 0 018 7c0 2.97-3.03 6.03-8 11z"/>
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-900 mb-2">الأعمال المساحية</h3>
+        <p class="text-gray-500 text-base">
+          أنظمة تحديد المواقع العالمية (GPS)، المحطة الشاملة (Total Station)، والخرائط الطبوغرافية
+        </p>
+      </div>
+      <!-- Electrical & Mechanical Works -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+        <div class="bg-yellow-100 rounded-full p-4 mb-4 flex items-center justify-center">
+          <!-- Lightning Bolt Icon -->
+          <svg class="h-8 w-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-900 mb-2">الأعمال الكهربائية والميكانيكية</h3>
+        <p class="text-gray-500 text-base">
+          أنظمة الطاقة، الطاقة الشمسية، وأنظمة المياه والصرف الصحي
+        </p>
+      </div>
+      <!-- Smart & Sustainable Solutions -->
+      <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center">
+        <div class="bg-yellow-100 rounded-full p-4 mb-4 flex items-center justify-center">
+          <!-- Light Bulb Icon -->
+          <svg class="h-8 w-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path d="M12 3a6 6 0 016 6c0 3-2 5-3 7H9c-1-2-3-4-3-7a6 6 0 016-6z"/>
+            <path d="M9 17h6m-3 0v2" stroke="currentColor"/>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-900 mb-2">الحلول الذكية والمستدامة</h3>
+        <p class="text-gray-500 text-base">
+          المباني الخضراء، كفاءة الطاقة، ودراسات الجدوى
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 px-4 relative">
+  <div class="container mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-yellow-500">Our Projects</h2>
+
+      <!-- Left Arrow Button - Now visible on all screen sizes -->
+      <button id="scrollLeftBtn" class="absolute left-2 lg:left-8 top-1/2 -translate-y-1/2 bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-full shadow-lg z-10 transition-all duration-300">
+          <i class="fas fa-chevron-left text-2xl"></i>
+      </button>
+
+      <!-- Projects Container - Horizontal Scrolling -->
+      <div id="projects-carousel" class="flex overflow-x-hidden snap-x snap-mandatory pb-4 no-scrollbar">
+        <!-- Project Card 1 -->
+        <div class="flex-shrink-0 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 snap-center p-4">
+            <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition-transform hover:scale-[1.01] duration-300">
+                <!-- Main Photo -->
+                <img src="/uses-aljonob/projects-images/aswar/1.JPG"
+                     alt="Main Project Image 1"
+                     class="w-full h-auto object-cover rounded-t-lg">
+                <div class="p-6">
+                    <h3 class="text-3xl font-semibold mb-3 text-yellow-400">Aswar Al Mostakbal Complex</h3>
+                    <p class="text-gray-300 mb-5 text-lg leading-relaxed">
+                        Iraq Basra
+                    </p>
+                    <!-- Small Photos Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
+                        <img src="/uses-aljonob/projects-images/aswar/2.JPG"
+                             alt="Small Project Image 1a"
+                             class="w-full h-32 object-cover rounded-md shadow-md">
+                        <img src="/uses-aljonob/projects-images/aswar/3.JPG"
+                             alt="Small Project Image 1b"
+                             class="w-full h-32 object-cover rounded-md shadow-md">
+                        <img src="/uses-aljonob/projects-images/aswar/4.JPG"
+                             alt="Small Project Image 1c"
+                             class="w-full h-32 object-cover rounded-md shadow-md">
+                             <img src="/uses-aljonob/projects-images/aswar/5.JPG"
+                             alt="Small Project Image 1c"
+                             class="w-full h-32 object-cover rounded-md shadow-md">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- Project Card 2 -->
+          <div class="flex-shrink-0 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 snap-center p-4">
+              <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition-transform hover:scale-[1.01] duration-300">
+                  <!-- Main Photo -->
+                  <img src="/uses-aljonob/projects-images/alfarah/6.jpg"
+                       alt="Main Project Image 2"
+                       class="w-full h-auto object-cover rounded-t-lg">
+                  <div class="p-6">
+                      <h3 class="text-3xl font-semibold mb-3 text-yellow-400">Al Farah Residential Complex</h3>
+                      <p class="text-gray-300 mb-5 text-lg leading-relaxed">
+                          العراق البصرة
+                      </p>
+                      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
+                          <img src="/uses-aljonob/projects-images/alfarah/7jpg.jpg"
+                               alt="Small Project Image 2a"
+                               class="w-full h-32 object-cover rounded-md shadow-md">
+                          <img src="/uses-aljonob/projects-images/alfarah/8.jpg"
+                               alt="Small Project Image 2b"
+                               class="w-full h-32 object-cover rounded-md shadow-md">
+                          <img src="/uses-aljonob/projects-images/alfarah/9.jpg"
+                               alt="Small Project Image 2c"
+                               class="w-full h-32 object-cover rounded-md shadow-md">
+                          <img src="/uses-aljonob/projects-images/alfarah/10.jpg"
+                               alt="Small Project Image 2c"
+                               class="w-full h-32 object-cover rounded-md shadow-md">
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="flex-shrink-0 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 snap-center p-4">
+              <div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition-transform hover:scale-[1.01] duration-300">
+                  <!-- Main Photo -->
+                  <img src="/uses-aljonob/projects-images/shatt-alarab/1jpg.JPG"
+                       alt="Main Project Image 3"
+                       class="w-full h-auto object-cover rounded-t-lg">
+                  <div class="p-6">
+                      <h3 class="text-3xl font-semibold mb-3 text-yellow-400">Shatt Al-Arab Residential Complex</h3>
+                      <p class="text-gray-300 mb-5 text-lg leading-relaxed">
+                        العراق البصرة
+                      </p>
+                      <!-- Small Photos Grid -->
+                      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
+                          <img src="/uses-aljonob/projects-images/shatt-alarab/2.JPG"
+                               alt="Small Project Image 3a"
+                               class="w-full h-32 object-cover rounded-md shadow-md">
+                          <img src="/uses-aljonob/projects-images/shatt-alarab/3.JPG"
+                               alt="Small Project Image 3b"
+                               class="w-full h-32 object-cover rounded-md shadow-md">
+                          <img src="/uses-aljonob/projects-images/shatt-alarab/4.JPG"
+                               alt="Small Project Image 3c"
+                               class="w-full h-32 object-cover rounded-md shadow-md">
+                          <img src="/uses-aljonob/projects-images/shatt-alarab/5.JPG"
+                               alt="Small Project Image 3d"
+                               class="w-full h-32 object-cover rounded-md shadow-md">
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Add more project cards here following the same structure -->
+      </div>
+
+      <!-- Right Arrow Button - Now visible on all screen sizes -->
+      <button id="scrollRightBtn" class="absolute right-2 lg:right-8 top-1/2 -translate-y-1/2 bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-full shadow-lg z-10 transition-all duration-300">
+          <i class="fas fa-chevron-right text-2xl"></i>
+      </button>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+      const carousel = document.getElementById('projects-carousel');
+      const scrollLeftBtn = document.getElementById('scrollLeftBtn');
+      const scrollRightBtn = document.getElementById('scrollRightBtn');
+      const projectCards = carousel.querySelectorAll('.flex-shrink-0');
+
+      if (!carousel || projectCards.length === 0) {
+          // Console error if elements are not found, instead of early return.
+          console.error("Carousel or project cards not found. Scrolling functionality cannot be initialized.");
+      } else {
+          // Function to calculate card width based on screen size and Tailwind classes
+          const getCardWidth = () => {
+              const card = projectCards[0];
+              if (!card) return 0; // Return 0 if no card is found
+              // Get the actual rendered width of the card element, including padding
+              return card.offsetWidth;
+          };
+
+          const scrollCarousel = (direction) => {
+              const cardWidth = getCardWidth();
+              const scrollAmount = direction * cardWidth;
+              carousel.scrollBy({
+                  left: scrollAmount,
+                  behavior: 'smooth'
+              });
+          };
+
+          scrollLeftBtn.addEventListener('click', () => scrollCarousel(-1));
+          scrollRightBtn.addEventListener('click', () => scrollCarousel(1));
+
+          // Optional: Show/hide arrows based on scroll position (more advanced, not in initial request)
+          // You might want to add IntersectionObserver or scroll event listeners
+          // to manage arrow visibility if you have many cards.
+      }
+  });
+</script>
+
+<!-- Call to Action Section (Translated) -->
+<section class="w-full flex justify-center py-8 bg-transparent" dir="rtl">
+  <div class="w-full max-w-5xl bg-[#fefcf6] rounded-2xl mx-4 flex flex-col items-center py-10">
+    <h2 class="text-2xl font-bold text-gray-900 mb-2 text-center">هل تحتاج لخدماتنا؟</h2>
+    <p class="text-base text-gray-500 mb-6 text-center">
+      تواصل معنا اليوم لمناقشة متطلبات مشروعك والحصول على استشارة مجانية
+    </p>
+    <button class="px-8 py-3 rounded-md font-medium text-white bg-gradient-to-r from-yellow-400 to-yellow-500 shadow hover:from-yellow-500 hover:to-yellow-400 transition">
+      احصل على استشارة مجانية
+    </button>
+  </div>
+</section>
+
+<div class="w-full py-12">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-white mb-8">ماذا يقول عملاؤنا</h2>
+    <div class="relative">
+      <div id="review-scroll" class="flex gap-6 overflow-x-auto scrollbar-hide pb-4"
+           style="scroll-behavior: smooth;">
+        <div class="min-w-[320px] max-w-xs bg-white rounded-2xl shadow-md p-6 flex-shrink-0">
+          <div class="flex flex-row-reverse items-center gap-4 mb-3">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                 alt="Customer"
+                 class="w-12 h-12 rounded-full object-cover border-2 border-yellow-400">
+            <span class="font-semibold text-gray-900 text-lg">أحمد ج.</span>
+          </div>
+          <p class="text-gray-600 text-base">
+            "فريق عمل محترف، تسليم في الوقت المحدد، واهتمام كبير بالتفاصيل. موصى به بشدة للمشاريع الهندسية!"
+          </p>
+        </div>
+        <div class="min-w-[320px] max-w-xs bg-white rounded-2xl shadow-md p-6 flex-shrink-0">
+          <div class="flex flex-row-reverse items-center gap-4 mb-3">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg"
+                 alt="Customer"
+                 class="w-12 h-12 rounded-full object-cover border-2 border-yellow-400">
+            <span class="font-semibold text-gray-900 text-lg">سارة ك.</span>
+          </div>
+          <p class="text-gray-600 text-base">
+            "حلولهم المبتكرة جعلت مشروعنا فعالاً ومنخفض التكلفة. تواصل رائع أيضاً!"
+          </p>
+        </div>
+        <div class="min-w-[320px] max-w-xs bg-white rounded-2xl shadow-md p-6 flex-shrink-0">
+          <div class="flex flex-row-reverse items-center gap-4 mb-3">
+            <img src="https://randomuser.me/api/portraits/men/65.jpg"
+                 alt="Customer"
+                 class="w-12 h-12 rounded-full object-cover border-2 border-yellow-400">
+            <span class="font-semibold text-gray-900 text-lg">محمد س.</span>
+          </div>
+          <p class="text-gray-600 text-base">
+            "من البداية إلى النهاية، تجاوزوا التوقعات. بالتأكيد سأعمل معهم مرة أخرى في المشاريع المستقبلية."
+          </p>
+        </div>
+        <div class="min-w-[320px] max-w-xs bg-white rounded-2xl shadow-md p-6 flex-shrink-0">
+          <div class="flex flex-row-reverse items-center gap-4 mb-3">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg"
+                 alt="Customer"
+                 class="w-12 h-12 rounded-full object-cover border-2 border-yellow-400">
+            <span class="font-semibold text-gray-900 text-lg">ليلى أ.</span>
+          </div>
+          <p class="text-gray-600 text-base">
+            "تواصل واضح، تسعير شفاف، والنتائج التي أردناها. شكراً لكم!"
+          </p>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<style>
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+
+<section id="contact" class="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8" dir="rtl">
+    <div class="bg-white rounded-xl shadow-lg w-full max-w-6xl p-6 sm:p-8 lg:p-10">
+        <!-- Header Section -->
+        <div class="text-center mb-8 sm:mb-12">
+            <h1 class="text-4xl sm:text-5xl font-bold text-gray-800 mb-2">تواصل معنا</h1>
+            <p class="text-gray-600 text-lg sm:text-xl">نحن هنا لمساعدتك في مشروعك القادم</p>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            <!-- Left Column: Form -->
+            <div class="flex flex-col space-y-6">
+                <!-- Full Name Input -->
+                <div>
+                    <label for="full-name" class="block text-gray-700 text-base font-medium mb-2 text-right">الاسم الكامل</label>
+                    <input type="text" id="full-name" placeholder="أدخل اسمك الكامل"
+                           class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 text-right">
+                </div>
+
+                <!-- Email Address Input -->
+                <div>
+                    <label for="email-address" class="block text-gray-700 text-base font-medium mb-2 text-right">عنوان البريد الإلكتروني</label>
+                    <input type="email" id="email-address" placeholder="أدخل عنوان بريدك الإلكتروني"
+                           class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 text-right">
+                </div>
+
+                <!-- Your Message Textarea -->
+                <div>
+                    <label for="your-message" class="block text-gray-700 text-base font-medium mb-2 text-right">رسالتك</label>
+                    <textarea id="your-message" placeholder="اكتب رسالتك هنا ....." rows="6"
+                              class="w-full p-3 border border-gray-300 rounded-lg resize-y focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 text-right"></textarea>
+                </div>
+
+                <!-- Send Message Button -->
+                <button class="w-full py-3 px-6 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-semibold rounded-lg shadow-md hover:from-yellow-500 hover:to-yellow-600 transition duration-300 transform hover:scale-105">
+                    إرسال الرسالة
+                </button>
+
+                <a href="https://wa.me/964707730799444" target="_blank" class="w-full py-3 px-6 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600 transition duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 rtl:space-x-reverse mt-4">
+                    <span>تواصل عبر واتساب</span>
+                    <i class="fab fa-whatsapp text-xl"></i>
+                </a>
+            </div>
+
+            <!-- Right Column: Contact Details & Social Media -->
+            <div class="flex flex-col space-y-6">
+                <!-- Phone -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm flex items-center space-x-4 rtl:space-x-reverse justify-end">
+                    <div>
+                        <p class="text-gray-700 font-medium text-base text-right">الهاتف</p>
+                        <p class="text-gray-900 text-lg font-semibold text-right">+964 07730799444</p>
+                        <p class="text-gray-900 text-lg font-semibold text-right">+964 07830799444</p>
+                    </div>
+                    <div class="flex-shrink-0 bg-yellow-100 rounded-full p-3">
+                        <i class="fas fa-phone-alt text-yellow-600 text-xl"></i>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm flex items-center space-x-4 rtl:space-x-reverse justify-end">
+                    <div>
+                        <p class="text-gray-700 font-medium text-base text-right">البريد الإلكتروني</p>
+                        <p class="text-gray-900 text-lg font-semibold text-right">Osusalijanob.co@gmail.com
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0 bg-yellow-100 rounded-full p-3">
+                        <i class="fas fa-envelope text-yellow-600 text-xl"></i>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm flex items-center space-x-4 rtl:space-x-reverse justify-end">
+                    <div>
+                        <p class="text-gray-700 font-medium text-base text-right">العنوان</p>
+                        <p class="text-gray-900 text-lg font-semibold text-right">البصرة، العراق</p>
+                    </div>
+                    <div class="flex-shrink-0 bg-yellow-100 rounded-full p-3">
+                        <i class="fas fa-map-marker-alt text-yellow-600 text-xl"></i>
+                    </div>
+                </div>
+
+                <!-- Working Hours -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm flex items-center space-x-4 rtl:space-x-reverse justify-end">
+                    <div>
+                        <p class="text-gray-700 font-medium text-base text-right">ساعات العمل</p>
+                        <p class="text-gray-900 text-lg font-semibold text-right">الأحد - الخميس: 9:00 صباحًا - 10:00 مساءً</p>
+                    </div>
+                    <div class="flex-shrink-0 bg-yellow-100 rounded-full p-3">
+                        <i class="fas fa-clock text-yellow-600 text-xl"></i>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm text-right">
+                    <p class="text-gray-700 font-medium text-base mb-4">تابعنا</p>
+                    <div class="flex space-x-4 rtl:space-x-reverse justify-end">
+                        <a href="https://www.facebook.com/share/1EcGUmS2WW/" class="text-gray-600 hover:text-blue-600 transition duration-200">
+                            <i class="fab fa-facebook-f text-2xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/osus_aljanub.co?igsh=d2Fycno2amJxY2hm" class="text-gray-600 hover:text-red-600 transition duration-200">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-gray-800 text-gray-300 py-8 px-4 sm:px-6 lg:px-8" dir="rtl">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div class="col-span-1 md:col-span-1 lg:col-span-2 text-right">
+            <div class="flex items-center mb-4 justify-start">
+                <div class="w-10 h-10 bg-transparent rounded-full flex items-center justify-center text-gray-900 font-bold text-xl ml-3">
+                    <img src="icons/loogo_ic.png" alt="شعار أسس الجنوب">
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white">أسس الجنوب</h3>
+                    <p class="text-yellow-500 text-sm">أسس راسخة لهندسة المستفبل</p>
+                </div>
+            </div>
+            <p class="text-gray-400 mb-2">البصرة، العراق</p>
+            <p class="text-gray-400 mb-2">+964 07730799444</p>
+            <p class="text-gray-400 mb-2">+964 07830799444</p>
+            <p class="text-gray-400">Osusalijanob.co@gmail.com</p>
+        </div>
+        <div class="text-right">
+            <h4 class="text-yellow-500 font-bold text-lg mb-4">روابط سريعة</h4>
+            <ul class="space-y-2">
+                <li><a href="#aubout" class="text-gray-400 hover:text-white transition duration-200">من نحن</a></li>
+                <li><a href="#services" class="text-gray-400 hover:text-white transition duration-200">خدماتنا</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white transition duration-200">المشاريع</a></li>
+                <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-200">تواصل معنا</a></li>
+            </ul>
+        </div>
+        <div class="text-right">
+            <h4 class="text-yellow-500 font-bold text-lg mb-4">ابق على اتصال</h4>
+            <p class="text-gray-400 mb-4">تواصل معنا للحصول على آخر الأخبار والمشاريع</p>
+            <button class="bg-yellow-500 text-gray-900 font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-yellow-600 transition duration-300 transform hover:scale-105">
+                <a href="#contact">تواصل معنا</a>
+            </button>
+        </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-6 text-center md:flex md:justify-between md:items-center text-sm text-gray-500">
+        
+        <p class="mt-2 md:mt-0">© 2025 أسس الجنوب. جميع الحقوق محفوظة.</p>
+    </div>
+</footer>
+
+
+<script>
+  const scrollContainer = document.getElementById('review-scroll');
+  let scrollInterval;
+  let autoScroll = () => {
+    if (!scrollContainer) return;
+    if (
+      scrollContainer.scrollLeft + scrollContainer.clientWidth >=
+      scrollContainer.scrollWidth - 1
+    ) {
+      scrollContainer.scrollTo({ left: 0, behavior: "smooth" });
+    } else {
+      scrollContainer.scrollBy({ left: 1, behavior: "smooth" });
+    }
+  };
+  function startAutoScroll() {
+    scrollInterval = setInterval(autoScroll, 20);
+  }
+  function stopAutoScroll() {
+    clearInterval(scrollInterval);
+  }
+  scrollContainer.addEventListener('mouseenter', stopAutoScroll);
+  scrollContainer.addEventListener('mouseleave', startAutoScroll);
+  scrollContainer.addEventListener('touchstart', stopAutoScroll);
+  scrollContainer.addEventListener('touchend', startAutoScroll);
+  startAutoScroll();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+</body>
+</body>
+</html>

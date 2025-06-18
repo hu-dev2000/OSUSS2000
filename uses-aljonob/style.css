@@ -1,0 +1,28 @@
+/* Custom styles for scrollbar hiding and golden accents */
+.slider-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.slider-container::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+}
+
+/* Custom gold colors similar to d4af37, bfa350 */
+.bg-gold-500 {
+    background-color: #d4af37;
+}
+.text-gold-500 {
+    color: #d4af37;
+}
+.hover\:bg-gold-600:hover {
+    background-color: #bfa350;
+}
+.border-gold-500 {
+    border-color: #d4af37;
+}
+
+/* Smooth transitions */
+.slider {
+    transition: transform 0.3s ease-in-out;
+}
